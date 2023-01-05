@@ -1,6 +1,10 @@
 pipeline{
     agent any
     
+    tools {
+        maven 'maventest'
+    }
+    
     stages{
         stage('Checkout'){
             steps{
